@@ -1,0 +1,70 @@
+#card {
+    height: 50vmin;
+    width: 90vmin;
+    background-color: white;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/8442566463_5e3e1714cf_z.jpg);
+    background-size: cover;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+#card:before, #card:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}
+#card:before {
+    -webkit-transform: translateZ(1rem);
+    transform: translateZ(1rem);
+    box-shadow: 54vmin 21vmin 0 white, 17vmin 46vmin 0 white, 14vmin 6vmin 0 white, 89vmin 20vmin 0 white, 27vmin 15vmin 0 white, 39vmin 12vmin 0 white, 41vmin 18vmin 0 white, 66vmin 19vmin 0 white, 44vmin 25vmin 0 white, 18vmin 4vmin 0 white, 71vmin 34vmin 0 white, 25vmin 9vmin 0 white, 20vmin 30vmin 0 white, 51vmin 49vmin 0 white, 25vmin 8vmin 0 white, 19vmin 24vmin 0 white, 86vmin 42vmin 0 white, 79vmin 42vmin 0 white, 41vmin 26vmin 0 white, 65vmin 23vmin 0 white, 44vmin 24vmin 0 white, 80vmin 7vmin 0 white, 38vmin 1vmin 0 white, 27vmin 32vmin 0 white, 55vmin 25vmin 0 white, 50vmin 11vmin 0 white, 81vmin 28vmin 0 white, 7vmin 22vmin 0 white, 52vmin 6vmin 0 white, 43vmin 1vmin 0 white, 83vmin 13vmin 0 white, 7vmin 7vmin 0 white, 60vmin 39vmin 0 white, 77vmin 12vmin 0 white, 11vmin 16vmin 0 white, 46vmin 24vmin 0 white, 55vmin 3vmin 0 white, 50vmin 3vmin 0 white, 62vmin 38vmin 0 white, 16vmin 47vmin 0 white, 65vmin 42vmin 0 white, 61vmin 3vmin 0 white, 88vmin 43vmin 0 white, 89vmin 1vmin 0 white, 27vmin 42vmin 0 white, 3vmin 46vmin 0 white, 70vmin 5vmin 0 white, 31vmin 43vmin 0 white, 67vmin 13vmin 0 white, 42vmin 49vmin 0 white;
+}
+#card:after {
+    height: 3px;
+    width: 3px;
+    -webkit-transform: translateZ(2rem);
+    transform: translateZ(2rem);
+    box-shadow: 78vmin 16vmin 0 white, 42vmin 31vmin 0 white, 37vmin 22vmin 0 white, 20vmin 49vmin 0 white, 28vmin 4vmin 0 white, 58vmin 32vmin 0 white, 8vmin 27vmin 0 white, 84vmin 20vmin 0 white, 8vmin 19vmin 0 white, 62vmin 20vmin 0 white, 85vmin 5vmin 0 white, 19vmin 6vmin 0 white, 48vmin 11vmin 0 white, 21vmin 32vmin 0 white, 32vmin 22vmin 0 white, 35vmin 11vmin 0 white, 40vmin 22vmin 0 white, 54vmin 21vmin 0 white, 29vmin 34vmin 0 white, 46vmin 45vmin 0 white, 55vmin 9vmin 0 white, 12vmin 2vmin 0 white, 44vmin 29vmin 0 white, 74vmin 46vmin 0 white, 48vmin 27vmin 0 white, 66vmin 24vmin 0 white, 53vmin 16vmin 0 white, 76vmin 19vmin 0 white, 40vmin 16vmin 0 white, 86vmin 31vmin 0 white, 1vmin 35vmin 0 white, 55vmin 33vmin 0 white, 51vmin 46vmin 0 white, 74vmin 26vmin 0 white, 2vmin 30vmin 0 white, 82vmin 19vmin 0 white, 71vmin 15vmin 0 white, 30vmin 9vmin 0 white, 87vmin 28vmin 0 white, 46vmin 12vmin 0 white, 47vmin 29vmin 0 white, 30vmin 41vmin 0 white, 55vmin 9vmin 0 white, 60vmin 24vmin 0 white, 17vmin 5vmin 0 white, 35vmin 35vmin 0 white, 49vmin 28vmin 0 white, 12vmin 5vmin 0 white, 14vmin 22vmin 0 white, 18vmin 8vmin 0 white;
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: -webkit-linear-gradient(top, #dbe6ed, #cfdde5);
+    background: linear-gradient(to bottom, #dbe6ed, #cfdde5);
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    position: relative;
+}

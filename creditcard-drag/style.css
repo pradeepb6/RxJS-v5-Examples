@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
+body {
+    color: white;
+    overflow: hidden;
+    background: #3A3A47;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100vh;
+    -webkit-perspective: 10em;
+    perspective: 10em;
+}
+
+.helper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.credit-card {
+    -webkit-transition: -webkit-transform 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: -webkit-transform 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 500ms cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: move;
+    color: white;
+    width: 20em;
+    font-family: 'Share Tech Mono', monospace;
+    border-radius: 1em;
+    text-align: left;
+    padding: 1em;
+    background: #DF3A62;
+    background: #7E57C2;
+    background: -webkit-linear-gradient(315deg, #DF3A62 0%, #7E57C2 100%);
+    background: linear-gradient(135deg, #DF3A62 0%, #7E57C2 100%);
+    position: absolute;
+    z-index: 10;
+}
+
+.credit-card__header {
+    pointer-events: none;
+    margin: .5em 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.credit-card__header__logo {
+    pointer-events: none;
+    display: inline-block;
+}
+.credit-card__header__logo img {
+    width: 4em;
+}
+
+.credit-card__header__type {
+    pointer-events: none;
+    width: 3em;
+    height: 2em;
+    display: inline-block;
+}
+
+.credit-card__header__type--maestro {
+    position: relative;
+}
+.credit-card__header__type--maestro:before, .credit-card__header__type--maestro:after {
+    border-radius: 50%;
+    content: '';
+    width: 2em;
+    height: 2em;
+    background: white;
+    position: absolute;
+}
+.credit-card__header__type--maestro:before {
+    opacity: 0.75;
+    left: 0;
+}
+.credit-card__header__type--maestro:after {
+    opacity: 0.4;
+    right: 0;
+}
+
+.credit-card__iban {
+    pointer-events: none;
+    margin: 2em 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.credit-card__iban > span {
+    display: block;
+    font-size: 1.8em;
+}
+
+.credit-card__valid {
+    pointer-events: none;
+    margin: 1em 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.credit-card__valid__label {
+    font-size: .8em;
+    text-transform: uppercase;
+    text-align: left;
+    display: inline-block;
+    height: 2em;
+    width: 3em;
+}
+.credit-card__valid__date {
+    margin-left: 1em;
+    font-size: 1.2em;
+    display: inline-block;
+}
+
+.credit-card__owner {
+    pointer-events: none;
+    margin: 1.5em 0 0;
+}
+.credit-card__owner > span {
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
